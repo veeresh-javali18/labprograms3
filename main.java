@@ -19,27 +19,3 @@ class Person {
     }
 }
 
-class Employee extends Person {
-    int empid;
-    double salary;
-
-    public Employee(String name, String dob, int empid, double salary) {
-        super(name, dob);
-        this.empid = empid;
-        this.salary = salary;
-    }
-
-    @Override
-    public void displayPerson() {
-        super.displayPerson();  // Display name and age
-        System.out.println("Emp ID: " + empid);
-        System.out.println("Salary: " + salary);
-    }
-}
-
-public class main {
-    public static void main(String[] args) {
-        Employee e = new Employee("Veeresh", "31-08-2005", 8, 25500.0);
-        e.displayPerson();
-    }
-}
